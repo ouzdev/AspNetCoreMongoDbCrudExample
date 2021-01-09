@@ -1,0 +1,23 @@
+﻿@model Shipwrecks
+@{
+    ViewData["Title"] = "UpdateRecord";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="form-group" action="/Home/UpdateRecord" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <label>Feature Type</label>
+    <input class="form-control" type="text" name="FeatureType" value="@Model.FeatureType" /><br />
+    <label>Chart</label>
+    <input class="form-control" type="text" name="Chart" value="@Model.Chart" /><br />
+    <label>Latitude</label>
+    <input class="form-control" type="text" name="Latitude" value="@Model.Latitude" /><br />
+    <label>Longitude</label>
+    <input class="form-control" type="text" name="Longitude" value="@Model.Longitude" /><br />
+    <label>Watlev</label>
+    <input class="form-control" type="text" name="Watlev" value="@Model.Watlev" /><br />
+    <hr />
+    <button type="submit">Gönder</button>
+</form>
+
+

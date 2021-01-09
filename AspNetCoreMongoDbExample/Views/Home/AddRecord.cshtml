@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "AddRecord";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="form-group" action="/Home/AddRecord" method="post">
+    <label>Feature Type</label>
+    <input class="form-control" type="text" name="FeatureType" value="" /><br />
+    <label>Chart</label>
+    <input class="form-control" type="text" name="Chart" value="" /><br />
+    <label>Latitude</label>
+    <input class="form-control" type="text" name="Latitude" value="" /><br />
+    <label>Longitude</label>
+    <input class="form-control" type="text" name="Longitude" value="" /><br />
+    <label>Watlev</label>
+    <input class="form-control" type="text" name="Watlev" value="" /><br />
+    <hr />
+    <button type="submit">Gönder</button>
+</form>
